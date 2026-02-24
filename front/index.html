@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Réservation de Matériel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <h1>Réservation de Matériel</h1>
+
+    <form id="reservationForm">
+
+      <label for="equipment">Matériel</label>
+      <select id="equipment" required>
+        <option value="">-- Choisir un matériel --</option>
+      </select>
+
+      <label for="email">Votre email</label>
+      <input type="email" id="email" placeholder="vous@exemple.com" required />
+
+      <label for="startDate">Date de début</label>
+      <input type="date" id="startDate" required />
+
+      <label for="endDate">Date de fin</label>
+      <input type="date" id="endDate" required />
+
+      <button type="submit">Réserver</button>
+
+    </form>
+
+    <!-- Message de succès ou d'erreur affiché ici -->
+    <div id="message" class="hidden"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
